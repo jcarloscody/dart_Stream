@@ -10,3 +10,4 @@
     - leva o mesmo conceito de Future.
     - você receberá `vários resultados`, ou seja, uma combinação de Futures.
     - é como se fosse um canal aberto, enquanto não fechar continuará aberto.
+    - `await` não é permitido usar num Future, porque a todo o momento é enviado dados.
