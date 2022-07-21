@@ -10,7 +10,7 @@ void main() async {
   //saida de dados - porta de saida
   final outStream = streamController.stream;
 
-  //recebendo os dados
+  //recebendo os dados - saida dos dados
   outStream
       //.take(5)
       .where((n) => n % 2 == 0)

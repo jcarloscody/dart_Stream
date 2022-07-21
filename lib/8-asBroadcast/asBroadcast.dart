@@ -41,6 +41,7 @@ void main() async {
     },
   );
 
+//https://api.flutter.dev/flutter/dart-async/Stream/Stream.fromFuture.html
   final streamFromFuture = Stream<String>.fromFuture(futureTask());
   streamFromFuture.listen(
     (value) => print(value),
@@ -49,6 +50,7 @@ void main() async {
   );
 }
 
+//https://api.flutter.dev/flutter/dart-async/Stream/Stream.fromFuture.html
 Future<String> futureTask() async {
   await Future.delayed(const Duration(seconds: 5));
   return 'Future complete';
