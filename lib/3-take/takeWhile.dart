@@ -1,4 +1,4 @@
-void main() async {
+Future<void> main() async {
   var intervalo = Duration(seconds: 2);
   var stream = Stream<int>.periodic(intervalo, (v) => v);
 
