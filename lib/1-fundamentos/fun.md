@@ -2,7 +2,7 @@
 
 ## Processos Assíncronos no Dart
 - É representado por duas classes:
-  - Future (futuro)
+  - `Future (futuro)`
     - é usado para representar um valor ou um erro que estará disponível em algum momento no futuro.
     - ela tem uma promessa de que irá responder algo no futuro
     - você receberá apenas `um único resultado (sucesso ou erro)`
