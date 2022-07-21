@@ -6,7 +6,7 @@ void main() async {
 
   stream = stream.take(10);
 
-  //com o await for o programa ficava parado, mas agora usaremos uma forma de escuta da stream
+  //com o await for o programa ficava parado, mas agora usaremos uma forma escutar a stream e deixar o algoritmo fluir
   //evitando o congestionamento do sistema.
   //o listener retorna um subscribe, ou seja, houve uma subscrição na stream para receber valores
   stream.listen((valor) {

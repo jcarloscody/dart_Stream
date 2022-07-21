@@ -33,8 +33,23 @@ void main() async {
     }
   });
 
-  Future.delayed(Duration(seconds: 11), () {
-    print("Future.delayd: subscribe3 cancelada");
-    subscribe3.cancel();
-  });
+  Future.delayed(
+    Duration(seconds: 11),
+    () {
+      print("Future.delayd: subscribe3 cancelada");
+      subscribe3.cancel();
+    },
+  );
+
+  final streamFromFuture = Stream<String>.fromFuture(futureTask());
+  streamFromFuture.listen(
+    (value) => print(value),
+    onDone: () => print('Done'),
+    onError: (value) => print(value),
+  );
+}
+
+Future<String> futureTask() async {
+  await Future.delayed(const Duration(seconds: 5));
+  return 'Future complete';
 }

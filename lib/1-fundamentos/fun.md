@@ -10,5 +10,5 @@
     - leva o mesmo conceito de Future.
     - você receberá `vários resultados`, ou seja, uma combinação de Futures.
     - é como se fosse um canal aberto, enquanto não fechar continuará aberto.
-    - `await` não é permitido usar num Future, porque a todo o momento é enviado dados.
+    - `await` não é permitido usar num Stream, porque a todo o momento é enviado dados.
     - por padrão um stream pode ter apenas um único ouvinte, mas tem exceção - asBroadcast
